@@ -1,0 +1,32 @@
+Explicación paso a paso
+
+PrintStream destino como parámetro
+Antes seguramente el método usaba System.out.printf(...).
+Ahora lo hacemos más flexible: el destino puede ser cualquier PrintStream (por ejemplo, un fichero o la consola).
+Esto se llama abstracción de salida.
+
+try-with-resources
+Se usa try ( ... ) para que el flujo se cierre automáticamente al terminar (tanto FileInputStream como PrintStream).
+
+Lectura byte a byte
+fis.read() devuelve un entero con el valor del byte o -1 si se acabó el archivo.
+Cada byte se imprime en formato hexadecimal con %02X (dos dígitos, mayúsculas, con ceros delante si hace falta).
+
+Volcado a fichero
+En el main, en vez de usar System.out, se crea un PrintStream que apunta a salida.txt:
+
+new PrintStream(new FileOutputStream(archivoDestino))
+
+
+Así el contenido se guarda en el fichero en vez de mostrarse en pantalla.
+
+Mensaje final
+Se muestra un mensaje por consola para confirmar que todo salió bien.
+
+🧠 En resumen
+
+Antes: volcar() → solo imprimía en pantalla (System.out).
+
+Ahora: volcar() → puede imprimir en cualquier PrintStream (pantalla o fichero).
+
+En main() → rediriges la salida a un archivo.
