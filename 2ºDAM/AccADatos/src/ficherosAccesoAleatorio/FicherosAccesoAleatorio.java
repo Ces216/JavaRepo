@@ -97,7 +97,7 @@ public class FicherosAccesoAleatorio {
             System.out.println("Intentando insertar en la posición 10...");
             faa.insertar(reg, 10);
 
-            System.out.println("✅ Inserción completada correctamente.");
+            System.out.println("Inserción completada correctamente.");
             System.out.println("Revisa el tamaño del archivo generado: fic_acceso_aleat.dat");
 
         } catch (IOException e) {
