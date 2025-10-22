@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <dni>12345678A</dni>
+        <apellidos>Pérez Gómez</apellidos>
+        <cp>28001</cp>
+    </cliente>
+    <cliente>
+        <dni>55148935B</dni>
+        <apellidos>López Díaz</apellidos>
+        <cp>28440</cp>
+    </cliente>
+</clientes>
