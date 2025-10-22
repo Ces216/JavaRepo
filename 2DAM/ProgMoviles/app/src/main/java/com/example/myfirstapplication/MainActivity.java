@@ -49,10 +49,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.i("EJEMPLO", "Estoy onDestoy, soy César");
+        Intent ejemplo = new Intent(this, MainActivity2.class);
+        startActivity(ejemplo);
     }
+
 
 
 }
