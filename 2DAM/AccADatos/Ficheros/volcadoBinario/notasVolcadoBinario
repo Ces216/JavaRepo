@@ -1,0 +1,33 @@
+💡 EXPLICACIÓN CLARA
+🔹 Antes:
+
+El método volcar() usaba directamente System.out.format(...) → solo imprimía en pantalla.
+
+No había forma de enviar la salida a otro destino.
+
+🔹 Ahora:
+
+Se añade un nuevo parámetro en el constructor: PrintStream salida.
+Así el programa puede escribir:
+
+en consola (System.out),
+
+o en un fichero (new PrintStream("archivo.txt")),
+
+o incluso en otro flujo si quisieras.
+
+En el método volcar(), todas las llamadas a System.out se cambian por salida.
+
+En el main(), el programa crea:
+
+PrintStream ps = new PrintStream(nomSalida);
+
+
+y se lo pasa al constructor.
+
+Resultado: el volcado se guarda en volcado.txt.
+
+🧠 En resumen
+Versión	Salida del volcado
+Original	Solo en pantalla (System.out)
+Modificada	En cualquier PrintStream (por ejemplo, un fichero)
