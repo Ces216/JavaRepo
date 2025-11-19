@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_centerInParent="true"
+        android:stretchColumns="*">
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/césar_h"/>
+            <androidx.appcompat.widget.AppCompatButton></androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton></androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/césar_h"/>
+        </TableRow>
+
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/césar_h"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
