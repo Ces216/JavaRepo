@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActividad1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:text="@string/AppMovilesC"
+        android:background="@color/material_dynamic_neutral70"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="30dp"
+        android:textAlignment="center"
+        android:padding="6dp"
+        />
+
+
+
+    <!-- Atributos para practicar-->
+    <!--1. Color de la línea divisoria (usaremos un color rojo para que se note)-->
+    <!--2. Grosor de la línea divisoria (2dp para que sea visible)-->
+    <!--3. Habilita el divisor antes del primer elemento (header)-->
+    <!--4. Habilita el divisor después del último elemento (footer)-->
+    <ListView
+        android:id="@+id/listViewPlanetas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@android:color/holo_purple"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:text="@string/pwrdByCésar"/>
+</LinearLayout>
