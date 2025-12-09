@@ -4,43 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/padre">
+
     <RelativeLayout
         android:id="@+id/hijo1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:background="#ff0000">
-    </RelativeLayout>
+        android:background="#ff0000"/>
+
     <RelativeLayout
         android:id="@+id/hijo2"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/hijo1"
-        android:background="#0000ff">
-    </RelativeLayout>
+        android:background="#0000ff"/>
+
+    <!-- CUADRADO GRANDE (hijo3) con tu nombre -->
     <RelativeLayout
         android:id="@+id/hijo3"
         android:layout_width="500dp"
         android:layout_height="350dp"
         android:layout_below="@id/hijo2"
         android:background="@color/cuadrado_amarillo">
+
+        <TextView
+            android:id="@+id/tvNombreCesar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/césar_h"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"/>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/hijo4"
         android:layout_width="175dp"
         android:layout_height="300dp"
         android:layout_below="@id/hijo3"
-        android:background="@color/material_dynamic_primary60">
-    </RelativeLayout>
+        android:background="@color/material_dynamic_primary60"/>
+
     <RelativeLayout
         android:id="@+id/hijo5"
         android:layout_width="250dp"
         android:layout_height="300dp"
         android:layout_below="@id/hijo3"
         android:layout_toRightOf="@id/hijo4"
-        android:background="@color/verde">
-    </RelativeLayout>
+        android:background="@color/verde"/>
 
 </RelativeLayout>
