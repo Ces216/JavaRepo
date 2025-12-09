@@ -16,22 +16,22 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@color/mi_rojo"/>
+            android:background="@color/mi_rojo" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@color/white"/>
+            android:background="@color/white" />
     </LinearLayout>
 
-    <!-- FILA 2 -->
+    <!-- FILA 2 (con tu nombre) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -42,20 +42,32 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@color/mi_rojo"/>
+            android:background="@color/mi_rojo" />
+
+        <!-- Celda central -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvNombreCesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/césar_h"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:background="@color/white"/>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@color/mi_rojo"/>
+            android:background="@color/mi_rojo" />
     </LinearLayout>
 
 </LinearLayout>
-
